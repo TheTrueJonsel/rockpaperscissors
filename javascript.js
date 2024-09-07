@@ -47,21 +47,16 @@ function playGame(){
 
     console.clear();
     if(humanScore == computerScore){
-        console.log("DRAW!\n\n");
-        console.log(`FINAL SCORE\n`);
-        console.log("Your score: " + humanScore);
-        console.log("Computer score: " + computerScore);
+        console.log("DRAW!\n\n");  
     } else if(humanScore > computerScore){
         console.log("CONGRATULATIONS, YOU WON!\n\n");
-        console.log(`FINAL SCORE\n`);
-        console.log("Your score: " + humanScore);
-        console.log("Computer score: " + computerScore);
     } else {
         console.log("OH NO, YOU LOST!\n\n");
-        console.log(`FINAL SCORE\n`);
-        console.log("Your score: " + humanScore);
-        console.log("Computer score: " + computerScore);
     }
+    
+    console.log(`FINAL SCORE\n`);
+    console.log("Your score: " + humanScore);
+    console.log("Computer score: " + computerScore);
 }
 
 playGame();
